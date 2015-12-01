@@ -5,5 +5,12 @@ import java.lang.Number;
 rule "AccidentSurcharge"
 	dialect "mvel"
 	when
+		There is a Driver
+		- has more than 2 number of tickets
+		There is a Policy
+		- price is greater than 0
+		- policy type is 'AUTO'
 	then
+		Add surcharge 200 to Policy
+		logRule
 end
