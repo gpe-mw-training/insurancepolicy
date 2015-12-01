@@ -15,20 +15,26 @@
       <name>driver</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>46</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>reason</fieldName>
           <expected>Too Young</expected>
+          <successResult>true</successResult>
+          <explanation>[Rejection] field [reason] was [Too Young].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>Rejection</name>
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2015-12-01 22:51:42.717 UTC</lastRunResult>
   <rules>
     <string>TooYoung</string>
   </rules>
