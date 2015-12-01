@@ -4,6 +4,8 @@ import java.lang.Number;
 
 rule "AccidentSurcharge"
 	dialect "mvel"
+	no-loop true
+	lock-on-active true
 	when
 		There is a Driver
 		- has more than 2 number of tickets
