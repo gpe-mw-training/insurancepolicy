@@ -45,7 +45,7 @@
         </field-data>
         <field-data>
           <name>driver</name>
-          <value>d1</value>
+          <value>=d1</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
