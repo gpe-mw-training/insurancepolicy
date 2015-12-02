@@ -97,7 +97,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>109</executionTimeResult>
+      <executionTimeResult>45</executionTimeResult>
       <numberOfRulesFired>5</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -159,19 +159,25 @@
       <anonymous>false</anonymous>
     </expect-fact>
     <expect-rule>
-      <ruleName>Row 4 CreditScoreDiscount</ruleName>
-      <expectedCount>2</expectedCount>
-    </expect-rule>
-    <expect-rule>
       <ruleName>SafeAdults</ruleName>
       <expectedCount>2</expectedCount>
+      <explanation>Rule [SafeAdults] activated 2 times.</explanation>
+      <successResult>true</successResult>
+      <actualResult>2</actualResult>
     </expect-rule>
     <expect-rule>
       <ruleName>PriceMultipleVehicles</ruleName>
+      <explanation>Rule [PriceMultipleVehicles] was activated 1 times.</explanation>
       <expectedFire>true</expectedFire>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
+    </expect-rule>
+    <expect-rule>
+      <ruleName>Row 3 CreditScoreDiscount</ruleName>
+      <expectedCount>2</expectedCount>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2015-12-02 00:52:14.799 UTC</lastRunResult>
+  <lastRunResult>2015-12-02 00:56:46.409 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.acme.insurance.policyquote</packageName>
