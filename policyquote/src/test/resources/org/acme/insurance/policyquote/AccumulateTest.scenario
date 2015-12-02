@@ -97,24 +97,26 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>45</executionTimeResult>
-      <numberOfRulesFired>5</numberOfRulesFired>
+      <executionTimeResult>0</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>price</fieldName>
           <expected>120</expected>
-          <successResult>true</successResult>
-          <explanation>[p1] field [price] was [120].</explanation>
+          <actualResult></actualResult>
+          <successResult>false</successResult>
+          <explanation>[p1] field [price] was [] expected [120].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>priceDiscount</fieldName>
           <expected>50</expected>
-          <successResult>true</successResult>
-          <explanation>[p1] field [priceDiscount] was [50].</explanation>
+          <actualResult></actualResult>
+          <successResult>false</successResult>
+          <explanation>[p1] field [priceDiscount] was [] expected [50].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -127,16 +129,18 @@
         <expect-field>
           <fieldName>price</fieldName>
           <expected>120</expected>
-          <successResult>true</successResult>
-          <explanation>[p2] field [price] was [120].</explanation>
+          <actualResult></actualResult>
+          <successResult>false</successResult>
+          <explanation>[p2] field [price] was [] expected [120].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>priceDiscount</fieldName>
           <expected>50</expected>
-          <successResult>true</successResult>
-          <explanation>[p2] field [priceDiscount] was [50].</explanation>
+          <actualResult></actualResult>
+          <successResult>false</successResult>
+          <explanation>[p2] field [priceDiscount] was [] expected [50].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -149,8 +153,9 @@
         <expect-field>
           <fieldName>price</fieldName>
           <expected>240</expected>
-          <successResult>true</successResult>
-          <explanation>[pM] field [price] was [240].</explanation>
+          <actualResult></actualResult>
+          <successResult>false</successResult>
+          <explanation>[pM] field [price] was [] expected [240].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -161,23 +166,30 @@
     <expect-rule>
       <ruleName>SafeAdults</ruleName>
       <expectedCount>2</expectedCount>
-      <explanation>Rule [SafeAdults] activated 2 times.</explanation>
-      <successResult>true</successResult>
-      <actualResult>2</actualResult>
+      <explanation>Rule [SafeAdults] activated 0 times. Expected 2 times.</explanation>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
     <expect-rule>
       <ruleName>PriceMultipleVehicles</ruleName>
-      <explanation>Rule [PriceMultipleVehicles] was activated 1 times.</explanation>
+      <explanation>Rule [PriceMultipleVehicles] was not activated. Expected it to be activated.</explanation>
       <expectedFire>true</expectedFire>
-      <successResult>true</successResult>
-      <actualResult>1</actualResult>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
     <expect-rule>
       <ruleName>Row 3 CreditScoreDiscount</ruleName>
       <expectedCount>2</expectedCount>
+      <explanation>Rule [Row 3 CreditScoreDiscount] activated 0 times. Expected 2 times.</explanation>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
+    </expect-rule>
+    <expect-rule>
+      <ruleName>StartRuleflow</ruleName>
+      <expectedFire>true</expectedFire>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2015-12-02 00:56:46.409 UTC</lastRunResult>
+  <lastRunResult>2015-12-02 19:17:51.665 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.acme.insurance.policyquote</packageName>
