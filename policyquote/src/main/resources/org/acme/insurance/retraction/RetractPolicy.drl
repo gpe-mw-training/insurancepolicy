@@ -1,6 +1,6 @@
 package org.acme.insurance.retraction;
 
-import org.acme.insurance.Driver;
+import org.acme.insurance.Policy;
 
 rule RetractPolicy
   ruleflow-group "retract"
